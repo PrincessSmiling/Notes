@@ -1,6 +1,23 @@
 {
   "colors" : [
     {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemYellowColor"
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "contrast",
+          "value" : "high"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "systemYellowColor"
+      },
       "idiom" : "universal"
     }
   ],
