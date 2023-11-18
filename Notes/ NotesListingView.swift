@@ -19,11 +19,10 @@ struct _NotesListingView: View {
                     VStack(alignment: .leading) {
                         Text(note.body)
                             .font(.headline)
-                        
                     }
                 }
             }
-            .onDelete(perform: deleteNote)
+           .onDelete(perform: deleteNote)
         }
     } 
     

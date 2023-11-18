@@ -11,21 +11,27 @@ import SwiftData
 struct CreateNotesView: View {
     
     @Bindable var note: Note
+    // @State private var name = "Taylor"
+    
     var body: some View {
-            VStack{
-                TextEditor(text: $note.body)
-            }
-            .toolbar{
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    Spacer()
-                    Button("Add notes", systemImage: "square.and.pencil", action: {})
+        VStack{
+            TextEditor(text: $note.body)
+                        }
+                        .toolbar{
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Button("Font", systemImage: "textformat.alt", action: {})
+                                Button("List", systemImage: "checklist", action: {})
+                                Button("Tabs", systemImage: "tablecells", action: {})
+                                Button("Camera", systemImage: "camera", action: {})
+                                Button("Drow", systemImage: "pencil.tip.crop.circle", action: {})
+                              // Spacer()
+                               // Button("Add notes", systemImage: "square.and.pencil", action: {})
+                            }
+                        }
+                        .navigationTitle("Edit Notes")
+                        .navigationBarTitleDisplayMode(.inline)
+                    }
                 }
-            }
-            .navigationTitle("Edit Notes")
-            .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
 #Preview {
     do {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
@@ -38,6 +44,5 @@ struct CreateNotesView: View {
         fatalError("Failed to create a model container.")
         
     }
-
 }
     

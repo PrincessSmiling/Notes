@@ -14,34 +14,36 @@ struct ContentView: View {
     @State private var sortOrder = SortDescriptor(\Note.date)
     @State private var searchText = ""
     
-    @Query(sort: [SortDescriptor(\Destination.priority, order: .reverse), SortDescriptor(\Destination.name)]) var destination: [Destination]
-
+    // @Query(sort: [SortDescriptor(\Destination.priority, order: .reverse), SortDescriptor(\Destination.name)]) var destination: [Destination]
+    
     @Query(sort: [SortDescriptor(\Note.date)]) var note: [Note]
     
     var body: some View {
         NavigationStack(path: $path) {
             _NotesListingView(sort: sortOrder, searchString: searchText )
-            .navigationTitle("All iCloud")
-            .navigationDestination(for: Note.self, destination: ProspectView.init)
-            .searchable(text: $searchText )
-            .toolbar {
-                Menu("View", systemImage: "ellipsis.circle") {
-                    Picker("Sort", selection: $sortOrder) {
-                        Text("View as Gallery")
-                            .tag(SortDescriptor(\Destination.name))
+                .navigationTitle("All iCloud")
+                .navigationDestination(for: Note.self, destination: ProspectView.init)
+                .searchable(text: $searchText )
+                .toolbar {
+                    Menu("View", systemImage: "ellipsis.circle") {
+                        // Picker("Sort", selection: $sortOrder) {
+                        // Text("View as Gallery")
+                        // .tag(SortDescriptor(\Destination.name))
                         
-                        Text("Select Notes")
-                            .tag(SortDescriptor(\Destination.priority ))
+                        // Text("Select Notes")
+                        //.tag(SortDescriptor(\Destination.priority ))
+                        Button("View as Gallery", systemImage:"square.grid.2x2", action: {} )
+                        Button("Select Notes", systemImage:"checkmark.circle", action: {} )
+                        Button("View Attachments", systemImage:"paperclip", action: {} )
                     }
-                    .pickerStyle(.inline) 
+                    // .pickerStyle(.inline)
                 }
-            }    
-            .toolbar {
-                ToolbarItemGroup(placement: .bottomBar) {
-                    Spacer()
-                    Button( "Add Notes", systemImage: "square.and.pencil", action: addNote)
+                .toolbar {
+                    ToolbarItemGroup(placement: .bottomBar) {
+                        Spacer()
+                        Button( "Add Notes", systemImage: "square.and.pencil", action: addNote)
+                    }
                 }
-            }
         }
     }
     
@@ -58,7 +60,7 @@ struct ContentView: View {
         }
     }
 }
-    
-#Preview {
-    ContentView()
-}
+    #Preview {
+        ContentView()
+    }
+
