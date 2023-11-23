@@ -50,7 +50,6 @@ struct ContentView: View {
                 }
               //.navigationBarBackButtonHidden(true)
         }
-        
     }
     
     func addNote() {

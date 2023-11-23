@@ -24,12 +24,12 @@ struct _NotesListingView: View {
                     }
                 }
             }
-           .onDelete(perform: deleteNote)
+            .onDelete(perform: deleteNote)
         }
-    } 
+    }
     
     init(sort: SortDescriptor<Note>, searchString: String) {
-      
+        
         _note = Query(filter: #Predicate {
             if searchString.isEmpty {
                 return true
@@ -39,10 +39,9 @@ struct _NotesListingView: View {
             }
         },  sort: [sort])
     }
-    
-     func deleteNote (_ indexSet: IndexSet) {
-         
-         for index in indexSet { //per delete
+    func deleteNote (_ indexSet: IndexSet) {
+        
+        for index in indexSet { //per delete
             let note = note[index]
             modelContext.delete(note)
         }
