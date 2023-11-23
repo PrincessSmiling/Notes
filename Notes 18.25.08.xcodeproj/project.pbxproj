@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A93D751F2B038D260080486B /*  XDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D751E2B038D260080486B /*  XDestination.swift */; };
-		A93D75232B03BB360080486B /* CreatePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D75222B03BB360080486B /* CreatePageView.swift */; };
+		A93D75232B03BB360080486B /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D75222B03BB360080486B /* ProspectView.swift */; };
 		A93D75272B05105F0080486B /*  NotesListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D75262B05105F0080486B /*  NotesListingView.swift */; };
 		A93D752B2B066DFB0080486B /* XCreateNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D752A2B066DFB0080486B /* XCreateNotesView.swift */; };
 		A93D752D2B0676340080486B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D752C2B0676340080486B /* Note.swift */; };
@@ -20,13 +20,13 @@
 
 /* Begin PBXFileReference section */
 		A93D751E2B038D260080486B /*  XDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " XDestination.swift"; sourceTree = "<group>"; };
-		A93D75222B03BB360080486B /* CreatePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePageView.swift; sourceTree = "<group>"; };
+		A93D75222B03BB360080486B /* ProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectView.swift; sourceTree = "<group>"; };
 		A93D75262B05105F0080486B /*  NotesListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NotesListingView.swift"; sourceTree = "<group>"; };
 		A93D752A2B066DFB0080486B /* XCreateNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCreateNotesView.swift; sourceTree = "<group>"; };
 		A93D752C2B0676340080486B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A9EAC5032B027D8C00B1B575 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAC5062B027D8C00B1B575 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
-		A9EAC5082B027D8C00B1B575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9EAC5082B027D8C00B1B575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		A9EAC50A2B027D8D00B1B575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9EAC50D2B027D8D00B1B575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +64,7 @@
 				A9EAC5062B027D8C00B1B575 /* NotesApp.swift */,
 				A9EAC5082B027D8C00B1B575 /* ContentView.swift */,
 				A93D75262B05105F0080486B /*  NotesListingView.swift */,
-				A93D75222B03BB360080486B /* CreatePageView.swift */,
+				A93D75222B03BB360080486B /* ProspectView.swift */,
 				A93D752C2B0676340080486B /* Note.swift */,
 				A93D751E2B038D260080486B /*  XDestination.swift */,
 				A93D752A2B066DFB0080486B /* XCreateNotesView.swift */,
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9EAC4FE2B027D8C00B1B575 /* Build configuration list for PBXProject "Notes" */;
+			buildConfigurationList = A9EAC4FE2B027D8C00B1B575 /* Build configuration list for PBXProject "Notes 18.25.08" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93D752B2B066DFB0080486B /* XCreateNotesView.swift in Sources */,
-				A93D75232B03BB360080486B /* CreatePageView.swift in Sources */,
+				A93D75232B03BB360080486B /* ProspectView.swift in Sources */,
 				A93D752D2B0676340080486B /* Note.swift in Sources */,
 				A9EAC5092B027D8C00B1B575 /* ContentView.swift in Sources */,
 				A93D751F2B038D260080486B /*  XDestination.swift in Sources */,
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9EAC4FE2B027D8C00B1B575 /* Build configuration list for PBXProject "Notes" */ = {
+		A9EAC4FE2B027D8C00B1B575 /* Build configuration list for PBXProject "Notes 18.25.08" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EAC50F2B027D8D00B1B575 /* Debug */,

@@ -20,7 +20,7 @@ struct ProspectView: View {
                         Button("Share", systemImage: "square.and.arrow.up", action: {})
                         Menu("Option", systemImage: "ellipsis.circle") {
                             Button("Lines & Grids", systemImage: "squareshape.split.3x3", action: {})
-                        }
+                        } 
                     }
                 }
             // .navigationTitle("Edit Notes")

@@ -10,11 +10,13 @@ import SwiftUI
 
 struct _NotesListingView: View {
     @Environment(\.modelContext) var modelContext
-    @Query(sort: [SortDescriptor(\Note.date)]) var note: [Note]
+    @Query(sort: \Note.date, order: .reverse) var note: [Note]
+    
+    
     
     var body: some View {
         List {
-            ForEach(note) {  note in
+            ForEach(note) {  note in //ho aggiunto reversed
                 NavigationLink(value: note) {
                     VStack(alignment: .leading) {
                         Text(note.body)
@@ -39,7 +41,8 @@ struct _NotesListingView: View {
     }
     
      func deleteNote (_ indexSet: IndexSet) {
-        for index in indexSet {
+         
+         for index in indexSet { //per delete
             let note = note[index]
             modelContext.delete(note)
         }
